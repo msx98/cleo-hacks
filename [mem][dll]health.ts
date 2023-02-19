@@ -32,6 +32,6 @@ while (true) {
     }
 
     wait(10);
-    CYCLES_SINCE_LAST_TOGGLE++;
+    if (CYCLES_SINCE_LAST_TOGGLE < 100000) CYCLES_SINCE_LAST_TOGGLE++;
 }
 
